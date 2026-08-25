@@ -1,21 +1,29 @@
 {
-  "short_name": "MP3layer",
   "name": "MP3layer",
+  "short_name": "MP3layer",
+  "description": "An audio player application.",
+  "start_url": "/MP3layer/index.html",
+  "display": "standalone",
+  "display_override": ["window-controls-override"],
+  "background_color": "#0a0a0f",
+  "theme_color": "#0a0a0f",
+  "orientation": "portrait",
   "icons": [
     {
       "src": "icon-192.png",
-      "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "192x192",
+      "type": "image/png"
     },
     {
       "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
       "type": "image/png",
-      "sizes": "512x512"
+      "purpose": "maskable"
     }
-  ],
-  "start_url": "/MP3layer/",
-  "background_color": "#0a0a0f",
-  "theme_color": "#0a0a0f",
-  "display": "standalone",
-  "orientation": "landscape"
+  ]
 }
