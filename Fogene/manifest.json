@@ -1,0 +1,28 @@
+{
+  "name": "Fogene Pro",
+  "short_name": "Fogene Pro",
+  "description": "A powerful and super helpful font generator!",
+  "start_url": "/Fogene/index.html",
+  "display": "standalone",
+  "display_override": ["window-controls-override"],
+  "background_color": "#0a0a0f",
+  "theme_color": "#0a0a0f",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon.svg",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon.svg",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
