@@ -7,7 +7,6 @@
   "display_override": ["window-controls-override"],
   "background_color": "#0a0a0f",
   "theme_color": "#0a0a0f",
-  "orientation": "landscape",
   "icons": [
     {
       "src": "icon-192.png",
