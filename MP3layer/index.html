@@ -332,6 +332,25 @@ document.addEventListener('keydown',e=>{
   if(e.code==='ArrowRight') doNext();
   if(e.code==='ArrowLeft') doPrev();
 });
+
+/* ── IMPORT PLAYLIST FROM FILE ── */
+if ('launchQueue' in window) {
+  launchQueue.setConsumer(async launchParams => {
+    for (const fileHandle of launchParams.files) {
+      const file = await fileHandle.getFile();
+
+      if (!file.name.toLowerCase().endsWith('.sroq')) continue;
+
+      const input = document.getElementById('sroq-input');
+
+      const dt = new DataTransfer();
+      dt.items.add(file);
+
+      input.files = dt.files;
+      input.dispatchEvent(new Event('change', { bubbles: true }));
+    }
+  });
+}
 </script>
 </body>
 </html>
