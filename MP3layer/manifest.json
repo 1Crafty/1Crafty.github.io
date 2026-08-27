@@ -24,5 +24,13 @@
       "type": "image/png",
       "purpose": "maskable"
     }
+  ],
+  "file_handlers": [
+    {
+      "action": "/MP3layer/index.html",
+      "accept": {
+        "application/x-sroq": [".sroq"]
+      }
+    }
   ]
 }
